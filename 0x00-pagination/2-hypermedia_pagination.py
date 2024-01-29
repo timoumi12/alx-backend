@@ -48,7 +48,7 @@ class Server:
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
         '''returns a dictionary containing key-value pairs'''
-        data = self.get_page(page, page_length)
+        data = self.get_page(page, page_size)
         n = len(self.dataset()) // page_size + 1
         return {
             "page": page,
