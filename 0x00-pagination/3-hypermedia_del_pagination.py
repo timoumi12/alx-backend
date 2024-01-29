@@ -39,7 +39,7 @@ class Server:
             }
         return self.__indexed_dataset
 
-    def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
+    def get_hyper_index(self, index: int = None, page_size: int = 10) -> dict:
         '''return a dictionary with key-value pairs'''
         dataset = self.indexed_dataset()
         data_length = len(dataset)
