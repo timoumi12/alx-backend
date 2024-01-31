@@ -3,7 +3,7 @@
 from base_caching import BaseCaching
 
 
-class BasicCaching(BaseCaching):
+class BasicCache(BaseCaching):
     '''a caching system'''
     def __init__(self):
         '''initialize the class'''
@@ -12,7 +12,7 @@ class BasicCaching(BaseCaching):
     def put(self, key, item):
         """assign to the dictionary an item"""
         if key is None or item is None:
-            return
+            pass
         self.cache_data[key] = item
 
     def get(self, key):
